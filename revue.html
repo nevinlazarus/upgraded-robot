@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+        <link type="text/css" rel="stylesheet" href="http://cgi.cse.unsw.edu.au/~z5019263/revuemail/stylesheet.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://cgi.cse.unsw.edu.au/~z5019263/myScript.js"> </script>
+        
+        
+		<title>Revue template</title>
+	</head>	
+
+	<body style="padding:25px;background-color:#add8e6"> 
+
+        <button type="button"> <a href="http://www.cse.unsw.edu.au/~z5019263/"> Back </a> </button>
+ 
+        <form style="width:100%"> 
+        <br>
+        <section class="headerandfooter" >
+            <div> <h2> Header and Footer </h2> </div>
+            
+            <div> <label> Heading </label>
+            <input id="headingInput" type="text" </div>
+            
+            <div> <label> Subheading </label>
+            <input id="subheadingInput" type="text" </div>
+            
+            <div> <label> Greeting </label>
+            <input id="greetingInput" type="text" </div>
+            
+        </section>
+            <h2> Items </h2>
+
+                    
+
+            <button style="float:right" type="button" onclick="removeItem()">Remove</button>
+            <button style="float:right" type="button" onclick="addItem()">+Add+</button>
+            <ol id="itemsList">   
+                <div class="myDiv" style="width:100%">
+
+                    <div id="div1">
+                        <select id="type1" name="type1">
+                            <option value ="announcement">Announcement</option>
+                            <option value ="event">Event</option>
+                            <option value>(None)</option>
+                        </select>
+                    </div>
+                    <input id="heading1" type="text"> </input>
+                    <textarea id="body1" name="body1"> </textarea>
+                </div>
+            </ol>
+            <button type="button" onclick="preview()">Preview</button>
+            <button type="button" onclick="save()">Save</button>
+            
+        </form>
+
+       
+	</body>
+
+</html>
